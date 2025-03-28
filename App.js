@@ -8,13 +8,15 @@
 // npm install @expo/vector-icons
 
 import React, { useState } from 'react';
-import { StatusBar, StyleSheet, TouchableOpacity, View, Text } from 'react-native';
+import { StatusBar, StyleSheet, TouchableOpacity, View, Text, ImageBackground } from 'react-native';
 import { CurvedBottomBar } from 'react-native-utils-navigation-bar';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const HomeScreen = () => (
   <View style={{ backgroundColor: '#BFEFFF', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Tela Inicial</Text>
+    <ImageBackground source={require('./assets/bg.jpg')} style={{ width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
+
+   </ImageBackground>
     
   </View>
 );
